@@ -20,7 +20,7 @@ public class TestController {
     @AuditLog(methodType = MethodType.insert)
     @PostMapping("/testApi2")
     public String testApi2(@RequestBody @LogParam Map<String, String> params) {
-        return "api 2 response params = " + params;
+        return "api 2 response";
     }
 
     @AuditLog(methodType = MethodType.execute)
